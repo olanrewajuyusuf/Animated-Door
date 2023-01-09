@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animating</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="name-bank">
+        <h1 class="name">
+          W<span class="span one">A</span>LL<span class="span two">E</span>W
+        </h1>
+        <h3>Open the door and feel the grace..</h3>
+        <div class="fan top"></div>
+        <div class="fan down"></div>
+      </div>
+      <div class="doorie">
+        <div class="door">
+          <blockquote>
+            <strong>AS-SALAM ALAIKUM WARAMATULLAH WABARAKATUH</strong>
+            <span>Kullu Aamin, Nahnu wa-antum bil khayr!</span>
+          </blockquote>
+          <div class="docker">
+            <div class="lock"></div>
+            <p>click me!</p>
+          </div>
+        </div>
+        <form>
+          <input type="text" class="display" placeholder="PASS CODE" />
+          <div class="passcode">
+            <input
+              type="text"
+              class="num"
+              placeholder="0"
+              maxlength="1"
+              required
+            />
+            <input
+              type="text"
+              class="num"
+              placeholder="0"
+              maxlength="1"
+              required
+            />
+            <input
+              type="text"
+              class="num"
+              placeholder="0"
+              maxlength="1"
+              required
+            />
+            <input
+              type="text"
+              class="num"
+              placeholder="0"
+              maxlength="1"
+              required
+            />
+          </div>
+          <div class="button">
+            <button type="submit" class="unlock">Unlock</button>
+            <input
+              class="delete"
+              placeholder="Del"
+              onclick="pin.value = pin.value.toString().slice(0, -1);"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal">
+        <img src="icon-close-modal.svg" alt="#" class="close-modal" />
+        <div>
+          <h3>Generate your code</h3>
+          <button class="code-button">click here</button>
+        </div>
+        <input type="text" class="code-gen" placeholder="code goes here" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
